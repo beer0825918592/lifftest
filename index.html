@@ -22,6 +22,8 @@
   <p id="utouId"><b>utouId:</b> </p>
   <p id="roomId"><b>roomId:</b> </p>
   <p id="groupId"><b>groupId:</b> </p>
+  <p id="noneId"><b>noneId:</b> </p>
+  <p id="externalId"><b>externalId:</b> </p>
   <p id="friendship"><b>isFriendship:</b> </p>
   <p id="scanCode"><b>Code:</b> </p>
   <p id="isLoggedIn"><b>isLoggedIn:</b> </p>
@@ -74,6 +76,8 @@
       document.getElementById("utouId").append(liff.getContext().utouId)
       document.getElementById("roomId").append(liff.getContext().roomId)
       document.getElementById("groupId").append(liff.getContext().groupId)
+      document.getElementById("noneId").append(liff.getContext().noneId)
+      document.getElementById("externalId").append(liff.getContext().externalId)
     }
 
     async function getUserProfile() {

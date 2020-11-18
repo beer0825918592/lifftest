@@ -69,6 +69,9 @@
     }
 
     function getContext() {
+      document.getElementById("type").append(liff.getContext().type)
+      document.getElementById("viewType").append(liff.getContext().viewType)
+      document.getElementById("utouId").append(liff.getContext().utouId)
     }
 
     async function getUserProfile() {
@@ -112,7 +115,7 @@
       await liff.init({ liffId: "1654480433-lr8EGm7E" })
        getEnvironment()
        getUserProfile()
-      // getContext()
+       getContext()
       // getFriendship()
       // createUniversalLink()
     }

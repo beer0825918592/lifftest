@@ -47,27 +47,45 @@
    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script> 
   <script>
     function createUniversalLink() {
+
     }
 
     async function shareMsg() {
+
     }
 
     function logOut() {
+
     }
 
     function closed() {
+
     }
 
     async function scanCode() {
+
     }
 
     function openWindow() {
+
     }
 
     async function getFriendship() {
+
     }
 
     async function sendMsg() {
+      if(liff.getContext().type !== "none"){
+        await liff.sendMessages([
+          {
+            "type":"sticker",
+            "stickerId":1,
+            "packageId":1
+          }
+        ])
+        alert("Message sent")
+      }
+
     }
 
     function getContext() {
